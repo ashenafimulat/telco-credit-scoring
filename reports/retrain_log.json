@@ -1,0 +1,16 @@
+{
+  "trigger": "2026-03: score PSI 0.027 (alert 0.25), AUC 0.689 vs 0.733 on validation; top drifting feature topup_avg_amt_30d (CSI 1.95)",
+  "current_version": "v1",
+  "action": "promoted v2",
+  "candidate_version": "v2",
+  "holdout_window": "2026-01-31 < snapshot <= 2026-03-28",
+  "holdout_auc_current": 0.697077489044248,
+  "holdout_auc_candidate": 0.6965198082926615,
+  "post_retrain_monitoring": {
+    "retrain_recommended": false,
+    "statuses": {
+      "2026-02": "AMBER",
+      "2026-03": "AMBER"
+    }
+  }
+}

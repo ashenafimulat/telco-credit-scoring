@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+mlruns/
+data/raw/*
+data/clean/*
+data/features/*
+models/registry/*
+!data/**/.gitkeep
+!models/registry/.gitkeep
+.venv/

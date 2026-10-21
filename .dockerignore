@@ -1,0 +1,7 @@
+data/raw
+data/clean
+data/features
+models/registry
+mlruns
+.git
+__pycache__

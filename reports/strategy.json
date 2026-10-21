@@ -1,0 +1,45 @@
+{
+  "cutoff_pd": 0.12,
+  "approve_all": {
+    "approval_rate": 1.0,
+    "default_rate_approved": 0.15802781289506954,
+    "net_profit_etb": -40954.5,
+    "realized_loss_etb": 125077.5
+  },
+  "policy": {
+    "approval_rate": 0.6405394016013485,
+    "default_rate_approved": 0.10230263157894737,
+    "net_profit_etb": -2946.0,
+    "realized_loss_etb": 68595.0
+  },
+  "tiers": [
+    {
+      "tier": "Tier 1 (lowest risk)",
+      "loans": 828,
+      "mean_pd": 0.035356063108579396,
+      "default_rate": 0.04830917874396135,
+      "flat_profit_etb": 12864.5,
+      "limit_mult": 1.5,
+      "tiered_profit_etb": 19296.75
+    },
+    {
+      "tier": "Tier 2",
+      "loans": 1072,
+      "mean_pd": 0.05913635041874187,
+      "default_rate": 0.09794776119402986,
+      "flat_profit_etb": -1152.5,
+      "limit_mult": 1.0,
+      "tiered_profit_etb": -1152.5
+    },
+    {
+      "tier": "Tier 3",
+      "loans": 1140,
+      "mean_pd": 0.09342494928214719,
+      "default_rate": 0.1456140350877193,
+      "flat_profit_etb": -14658.0,
+      "limit_mult": 0.6,
+      "tiered_profit_etb": -8794.8
+    }
+  ],
+  "headline": "Applying a PD cut-off of 0.12 (chosen on validation) to the out-of-time test set changes approvals by -36 pts, cuts the default rate among approved loans from 15.8% to 10.2% and moves net profit from -40,954 to -2,946 ETB."
+}

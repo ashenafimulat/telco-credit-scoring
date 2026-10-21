@@ -1,0 +1,9 @@
+telco-credit-scoring
+This project is derived from an Apache-2.0 licensed open-source project:
+"Alternative Credit Scoring using Synthetic Telecom Data"  <-- ADD ORIGINAL AUTHOR + REPO URL HERE
+The original README, notebook and dataset are preserved unmodified in legacy_snapshot/.
+
+Changes made in this derivative work: replaced the single flat snapshot table with time-stamped GSM,
+M-PESA, wallet and loan tables; added ETL, data-quality checks, point-in-time feature engineering,
+a WOE scorecard and gradient-boosting model, out-of-time validation, cut-off/limit strategy,
+drift monitoring and retraining, a scoring API, tests, CI and documentation.

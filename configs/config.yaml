@@ -1,0 +1,49 @@
+seed: 42
+
+paths:
+  raw: data/raw
+  clean: data/clean
+  features: data/features
+  registry: models/registry
+  reports: reports
+
+generator:
+  n_customers: 5000
+  history_start: "2025-01-01"
+  history_end: "2026-03-31"
+  first_vintage: "2025-04"      # first loan month (>=90 days of history before it)
+  last_vintage: "2026-03"
+  loan_take_prob: 0.40          # avg. monthly probability a customer takes a loan
+  target_default_rate: 0.12
+  loan_term_days: 15
+  default_after_days: 30        # default = not repaid 30 days after disbursement
+  fee_rate: 0.10
+  dirty_rate: 0.002             # share of injected duplicates / negatives / outliers in raw data
+  shock_start: "2026-01-01"     # simulated airtime-promo + salary-delay scenario (null = off)
+  shock:
+    topup_freq_mult: 1.8       # promo: more, smaller top-ups
+    topup_amt_mult: 0.55
+    inflow_mult: 0.60           # delayed / lower inflows
+    default_logit_shift: 0.50   # macro stress on repayment
+
+split:                           # out-of-time split by disbursement date
+  train_end: "2025-10-31"
+  valid_end: "2025-12-31"        # test = Jan-Mar 2026 (contains the shock)
+
+scorecard:
+  n_bins: 8
+  min_iv: 0.02
+  max_corr: 0.80
+  base_score: 600
+  base_odds: 20                  # good:bad odds at base score
+  pdo: 50                        # points to double the odds
+
+strategy:
+  lgd: 0.85
+  cost_of_funds: 0.01
+  cutoff_grid_step: 0.01
+
+monitoring:
+  psi_warn: 0.10
+  psi_alert: 0.25
+  auc_drop_alert: 0.03

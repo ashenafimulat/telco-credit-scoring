@@ -1,0 +1,400 @@
+{
+  "stage": "clean",
+  "counts": {
+    "PASS": 65,
+    "WARN": 0,
+    "FAIL": 0
+  },
+  "results": [
+    {
+      "name": "schema_columns",
+      "table": "customers",
+      "status": "PASS",
+      "detail": "missing=[] unexpected=[]"
+    },
+    {
+      "name": "schema_dtypes",
+      "table": "customers",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "name": "nulls[customer_id]",
+      "table": "customers",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[region]",
+      "table": "customers",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.01"
+    },
+    {
+      "name": "nulls[device_type]",
+      "table": "customers",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[tenure_months_at_start]",
+      "table": "customers",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "unique[customer_id]",
+      "table": "customers",
+      "status": "PASS",
+      "detail": "duplicate_rows=0"
+    },
+    {
+      "name": "valid_values[device_type]",
+      "table": "customers",
+      "status": "PASS",
+      "detail": "invalid_rows=0"
+    },
+    {
+      "name": "schema_columns",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "missing=[] unexpected=[]"
+    },
+    {
+      "name": "schema_dtypes",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "name": "nulls[customer_id]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[date]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[topup_count]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[topup_amount]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[voice_min]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[data_mb]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[sms_count]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "unique[customer_id,date]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "duplicate_rows=0"
+    },
+    {
+      "name": "non_negative[topup_count]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "negative_or_non_numeric_rows=0"
+    },
+    {
+      "name": "non_negative[topup_amount]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "negative_or_non_numeric_rows=0"
+    },
+    {
+      "name": "non_negative[voice_min]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "negative_or_non_numeric_rows=0"
+    },
+    {
+      "name": "non_negative[data_mb]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "negative_or_non_numeric_rows=0"
+    },
+    {
+      "name": "non_negative[sms_count]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "negative_or_non_numeric_rows=0"
+    },
+    {
+      "name": "schema_columns",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "missing=[] unexpected=[]"
+    },
+    {
+      "name": "schema_dtypes",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "name": "nulls[txn_id]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[customer_id]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[txn_date]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[txn_type]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[direction]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[amount]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "unique[txn_id]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "duplicate_rows=0"
+    },
+    {
+      "name": "non_negative[amount]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "negative_or_non_numeric_rows=0"
+    },
+    {
+      "name": "valid_values[direction]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "invalid_rows=0"
+    },
+    {
+      "name": "valid_values[txn_type]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "invalid_rows=0"
+    },
+    {
+      "name": "schema_columns",
+      "table": "wallet_daily",
+      "status": "PASS",
+      "detail": "missing=[] unexpected=[]"
+    },
+    {
+      "name": "schema_dtypes",
+      "table": "wallet_daily",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "name": "nulls[customer_id]",
+      "table": "wallet_daily",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[date]",
+      "table": "wallet_daily",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[balance_etb]",
+      "table": "wallet_daily",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "unique[customer_id,date]",
+      "table": "wallet_daily",
+      "status": "PASS",
+      "detail": "duplicate_rows=0"
+    },
+    {
+      "name": "non_negative[balance_etb]",
+      "table": "wallet_daily",
+      "status": "PASS",
+      "detail": "negative_or_non_numeric_rows=0"
+    },
+    {
+      "name": "schema_columns",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "missing=[] unexpected=[]"
+    },
+    {
+      "name": "schema_dtypes",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "name": "nulls[loan_id]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[customer_id]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[disbursement_date]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[principal_etb]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[fee_etb]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[due_date]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[repaid_date]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "null_frac=0.1200 limit=0.3"
+    },
+    {
+      "name": "nulls[default_flag]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "nulls[outcome_date]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "null_frac=0.0000 limit=0.0"
+    },
+    {
+      "name": "unique[loan_id]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "duplicate_rows=0"
+    },
+    {
+      "name": "non_negative[principal_etb]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "negative_or_non_numeric_rows=0"
+    },
+    {
+      "name": "non_negative[fee_etb]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "negative_or_non_numeric_rows=0"
+    },
+    {
+      "name": "fk[customer_id->customers]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "orphan_rows=0"
+    },
+    {
+      "name": "fk[customer_id->customers]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "orphan_rows=0"
+    },
+    {
+      "name": "fk[customer_id->customers]",
+      "table": "wallet_daily",
+      "status": "PASS",
+      "detail": "orphan_rows=0"
+    },
+    {
+      "name": "fk[customer_id->customers]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "orphan_rows=0"
+    },
+    {
+      "name": "outliers[amount]",
+      "table": "mpesa_txn",
+      "status": "PASS",
+      "detail": "frac_above_3.0xIQR_log=0.00001"
+    },
+    {
+      "name": "outliers[topup_amount]",
+      "table": "gsm_daily",
+      "status": "PASS",
+      "detail": "frac_above_3.0xIQR_log=0.00002"
+    },
+    {
+      "name": "date_order[disbursement_date<=repaid_date]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "violations=0"
+    },
+    {
+      "name": "date_order[disbursement_date<=due_date]",
+      "table": "loans",
+      "status": "PASS",
+      "detail": "violations=0"
+    },
+    {
+      "name": "grid_completeness",
+      "table": "wallet_daily",
+      "status": "PASS",
+      "detail": "rows=2275000 expected~2275000"
+    }
+  ]
+}

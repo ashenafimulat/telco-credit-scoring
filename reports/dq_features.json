@@ -1,0 +1,310 @@
+{
+  "stage": "features",
+  "counts": {
+    "PASS": 50,
+    "WARN": 0,
+    "FAIL": 0
+  },
+  "results": [
+    {
+      "name": "unique[loan_id]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "duplicate_rows=0"
+    },
+    {
+      "name": "no_infinite_values",
+      "table": "features",
+      "status": "PASS",
+      "detail": "inf_cells=0"
+    },
+    {
+      "name": "nulls[topup_cnt_7d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[topup_cnt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[topup_cnt_90d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[topup_amt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[topup_avg_amt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.072"
+    },
+    {
+      "name": "nulls[topup_cnt_trend]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[topup_weekly_cv_12w]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.008"
+    },
+    {
+      "name": "nulls[days_since_last_topup]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.001"
+    },
+    {
+      "name": "nulls[gsm_active_days_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[gsm_active_days_90d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[days_since_last_activity]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[voice_min_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[data_mb_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[data_mb_trend]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[sms_cnt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_txn_cnt_7d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_txn_cnt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_txn_cnt_90d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_inflow_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_outflow_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[inflow_outflow_ratio_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_inflow_90d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_inflow_weekly_cv_12w]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.002"
+    },
+    {
+      "name": "nulls[mp_cashin_cnt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_cashout_cnt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_p2p_send_cnt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_p2p_recv_cnt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_billpay_cnt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_merchant_cnt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[mp_avg_txn_amt_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[days_since_last_mpesa_txn]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[wallet_bal_mean_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[wallet_bal_std_90d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[wallet_bal_trend_7v90]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[wallet_low_bal_days_30d]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[tenure_months]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[is_smartphone]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[region]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[loan_amount]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[loan_to_inflow_ratio]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[prior_loan_cnt]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[prior_late_cnt]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[prior_default_cnt]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.000"
+    },
+    {
+      "name": "nulls[last_loan_late]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.254"
+    },
+    {
+      "name": "nulls[days_since_last_loan]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.254"
+    },
+    {
+      "name": "nulls[avg_prior_repay_lag]",
+      "table": "features",
+      "status": "PASS",
+      "detail": "null_frac=0.285"
+    },
+    {
+      "name": "no_constant_features",
+      "table": "features",
+      "status": "PASS",
+      "detail": "constant=[]"
+    },
+    {
+      "name": "label_binary",
+      "table": "features",
+      "status": "PASS",
+      "detail": "default in {0,1}"
+    }
+  ]
+}

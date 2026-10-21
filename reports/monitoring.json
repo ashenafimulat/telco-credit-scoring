@@ -1,0 +1,78 @@
+{
+  "model_version": "v1",
+  "retrain_recommended": true,
+  "reason": "2026-03: score PSI 0.027 (alert 0.25), AUC 0.689 vs 0.733 on validation; top drifting feature topup_avg_amt_30d (CSI 1.95)",
+  "valid_auc": 0.7326103835336099,
+  "monthly": [
+    {
+      "vintage": "2025-11",
+      "split": "valid",
+      "loans": 1615,
+      "score_psi": 0.008229589819558056,
+      "max_csi": 0.17705147391558068,
+      "max_csi_feature": "prior_late_cnt",
+      "auc": 0.7479232716904749,
+      "auc_drop_vs_valid": -0.015312888156865045,
+      "default_rate": 0.12012383900928793,
+      "mean_pd": 0.10904485037693243,
+      "approval_rate_at_policy": 0.6854489164086688,
+      "status": "GREEN"
+    },
+    {
+      "vintage": "2025-12",
+      "split": "valid",
+      "loans": 1563,
+      "score_psi": 0.009362474358718223,
+      "max_csi": 0.2519837263025305,
+      "max_csi_feature": "prior_late_cnt",
+      "auc": 0.7150736166617622,
+      "auc_drop_vs_valid": 0.017536766871847687,
+      "default_rate": 0.09532949456174024,
+      "mean_pd": 0.11074419393855418,
+      "approval_rate_at_policy": 0.6615483045425464,
+      "status": "AMBER"
+    },
+    {
+      "vintage": "2026-01",
+      "split": "test",
+      "loans": 1573,
+      "score_psi": 0.012210156865610208,
+      "max_csi": 0.5186553729692518,
+      "max_csi_feature": "topup_avg_amt_30d",
+      "auc": 0.689522853028121,
+      "auc_drop_vs_valid": 0.04308753050548886,
+      "default_rate": 0.15066751430387795,
+      "mean_pd": 0.11246719981027418,
+      "approval_rate_at_policy": 0.663064208518754,
+      "status": "RED"
+    },
+    {
+      "vintage": "2026-02",
+      "split": "test",
+      "loans": 1667,
+      "score_psi": 0.03230820113628033,
+      "max_csi": 1.923130140571213,
+      "max_csi_feature": "topup_avg_amt_30d",
+      "auc": 0.7036906907824387,
+      "auc_drop_vs_valid": 0.028919692751171122,
+      "default_rate": 0.17036592681463708,
+      "mean_pd": 0.12094783158522028,
+      "approval_rate_at_policy": 0.6172765446910617,
+      "status": "AMBER"
+    },
+    {
+      "vintage": "2026-03",
+      "split": "test",
+      "loans": 1506,
+      "score_psi": 0.02674689563280378,
+      "max_csi": 1.9454123492814674,
+      "max_csi_feature": "topup_avg_amt_30d",
+      "auc": 0.6890535609866192,
+      "auc_drop_vs_valid": 0.04355682254699067,
+      "default_rate": 0.15205843293492696,
+      "mean_pd": 0.11809069637204424,
+      "approval_rate_at_policy": 0.6427622841965471,
+      "status": "RED"
+    }
+  ]
+}

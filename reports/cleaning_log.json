@@ -1,0 +1,57 @@
+[
+  {
+    "table": "customers",
+    "rule": "dedupe customer_id",
+    "rows_affected": 0
+  },
+  {
+    "table": "customers",
+    "rule": "region null -> UNKNOWN",
+    "rows_affected": 25
+  },
+  {
+    "table": "gsm_daily",
+    "rule": "dedupe (customer_id,date)",
+    "rows_affected": 2224
+  },
+  {
+    "table": "gsm_daily",
+    "rule": "drop negative usage",
+    "rows_affected": 0
+  },
+  {
+    "table": "mpesa_txn",
+    "rule": "dedupe txn_id",
+    "rows_affected": 3834
+  },
+  {
+    "table": "mpesa_txn",
+    "rule": "drop non-positive amount",
+    "rows_affected": 958
+  },
+  {
+    "table": "mpesa_txn",
+    "rule": "winsorise amount at p99.95 per txn_type",
+    "rows_affected": 961
+  },
+  {
+    "table": "wallet_daily",
+    "rule": "dedupe (customer_id,date)",
+    "rows_affected": 0
+  },
+  {
+    "table": "wallet_daily",
+    "rule": "drop negative balance",
+    "rows_affected": 0
+  },
+  {
+    "table": "loans",
+    "rule": "dedupe loan_id",
+    "rows_affected": 0
+  },
+  {
+    "table": "loans",
+    "rule": "drop repaid before disbursed",
+    "rows_affected": 0
+  }
+]
